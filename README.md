@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Little Friends
 
-## Getting Started
+**Little Friends** — це веб-застосунок, що дозволяє користувачам переглядати рандомні породи котів та собак. Проєкт використовує API для отримання інформації про породи, включаючи назву породи, її характеристики та зображення. Користувачі можуть переглядати список з 12 випадково вибраних порід котів та собак на головній сторінці, а також переходити до детальної сторінки огляду, де доступна більш детальна інформація про кожну породу та галерея зображень.
 
-First, run the development server:
+## Основні можливості
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Головна сторінка**:
+   - Відображення 12 рандомних порід котів та собак.
+   - Показ назви породи та основного зображення.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Сторінка детального огляду породи**:
+   - Відображення детальної інформації про вибрану породу, включаючи опис, темперамент, та інші характеристики.
+   - Галерея зображень для обраної породи.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Технології
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Проєкт побудований з використанням таких технологій та бібліотек:
 
-## Learn More
+- **React** — для побудови компонентів користувацького інтерфейсу.
+- **Next.js** — для серверного рендерингу та маршрутизації.
+- **Tailwind CSS** — для швидкого та ефективного стилізування інтерфейсу.
+- **TypeScript** — для типізації та підвищення надійності коду.
+- **ESLint** — для забезпечення якості коду та дотримання правил написання коду.
 
-To learn more about Next.js, take a look at the following resources:
+## Встановлення та запуск
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Щоб розгорнути проєкт локально, виконайте наступні кроки:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Клонування репозиторію**:
+   ```bash
+   git clone https://github.com/Avocod3r/little-friends.git
+   cd little-friends
+   ```
+   
+2. **Встановлення залежностей**:
+Використовуючи npm або yarn, встановіть усі необхідні залежності:
 
-## Deploy on Vercel
+  ```bash
+  npm install
+  # або
+  yarn install
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  3.**Налаштування середовища**:
+  Створіть файл .env в корені проєкту і додайте ваші ключі доступу до API або скопіюйте з файлу .env.example:
+  
+  ```env
+  NEXT_PUBLIC_CAT_API_KEY=your-cat-api-key
+  NEXT_PUBLIC_DOG_API_KEY=your-dog-api-key
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  4.**Запуск проєкту**:
+  Для запуску проєкту у режимі розробки виконайте команду:
+  
+  ```bash
+  Копіювати код
+  npm run dev
+  # або
+  yarn dev
+  ```
+  5. **Перегляд у браузері**:
+  Відкрийте http://localhost:3000 у вашому браузері, щоб переглянути проєкт.
